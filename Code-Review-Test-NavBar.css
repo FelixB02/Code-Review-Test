@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Designing the NavBar*/
+nav {
+  background-color: darkgray;
+  height: 13vh;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+}
+
+nav a {
+  list-style: none;
+  height: 100%;
+  width: 60%;
+  text-decoration: none;
+  padding-left: 10vh;
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  padding-top: 4.6vh;
+  border-right: 1px solid black;
+}
+nav a:hover {
+  color: black;
+  transition: color 2s;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-self: center;
+  width: 9%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  border-right: 1px solid black;
+}
+
+/* Designing the Divs */
+.element img {
+  width: 100%;
+}
+
+.element {
+  border: 2px solid lightgrey;
+  text-align: center;
+}
+
+.element p {
+  font-weight: bold;
+  color: darkolivegreen;
+  font-size: 5vh;
+}
+
+/* Creating the Grid for the container */
+.container {
+  margin-top: 10%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vh;
+}
+
+/* Media Queries for the different screen sizes */
+@media screen and (max-width: 620px) {
+  .container {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 621px) and (max-width: 900px) {
+  .container {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1101px) {
+  .container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=Code-Review-Test-NavBar.css.map */
